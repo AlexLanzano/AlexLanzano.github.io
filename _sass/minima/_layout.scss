@@ -12,6 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 0;
 }
 
 .site-title {
@@ -19,7 +20,6 @@
   font-weight: 300;
   letter-spacing: -1px;
   margin-bottom: 0;
-  float: left;
 
   @include media-query($on-palm) {
     padding-right: 45px;
@@ -39,14 +39,15 @@
   border: 1px solid $border-color-01;
   border-radius: 5px;
   text-align: right;
-  margin-left: auto;
+  margin-left: 10px;
+  padding: 10px;
+  display: inline-block;
 
   .nav-trigger {
     display: none;
   }
 
   .menu-icon {
-    float: right;
     width: 36px;
     height: 26px;
     line-height: 0;
@@ -291,15 +292,19 @@
 
 
 .social-media-list {
-  display: table;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   li {
     float: left;
-    margin: 5px 10px 5px 0;
+    margin: 0 10px;
     &:last-of-type { margin-right: 0 }
     a {
-      display: block;
-      padding: 10px 12px;
+      display: flex;
+      align-items: center;
+      padding: 10px;
       border: 1px solid $border-color-01;
       &:hover { border-color: $border-color-02 }
     }
