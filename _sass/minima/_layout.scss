@@ -19,6 +19,7 @@
   font-weight: 300;
   letter-spacing: -1px;
   margin-bottom: 0;
+  float: left;
 
   @include media-query($on-palm) {
     padding-right: 45px;
@@ -39,7 +40,7 @@
   border-radius: 5px;
   text-align: right;
   margin-left: auto;
-  padding: 10px;
+  padding: 5px;
   display: flex;
   align-items: center;
 
@@ -150,6 +151,8 @@
   @include relative-font-size(0.9375);
   color: $brand-color;
   display: flex;
+  float: left;
+  padding-top: 10px;
 }
 
 .footer-col {
@@ -299,7 +302,7 @@
   margin: 0;
   list-style: none;
   li {
-    margin: 0 10px;
+    margin: 0 4px;
     &:last-of-type { margin-right: 0 }
     a {
       display: flex;
